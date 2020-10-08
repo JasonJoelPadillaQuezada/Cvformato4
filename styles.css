@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+/*color Variado de Fondo*/
+body{
+	background: linear-gradient(to right, #4435b6, #9153c9);
+}
+/*propiedades de pag. derecha*/
+.resume{
+	width: 800px;
+	background: #fff;
+	margin: 25px auto;
+    display: flex;
+    
+}
+/*propiedades de pag. izquierda*/
+.left{
+	background: #292b2f;
+	width: 250px;
+	padding: 20px;
+}
+/*ancho de pag. derecha*/
+.right{
+	width: calc(100% - 250px);
+}
+/*espacio de imagen (arriba)*/
+.left .img_holder{
+	text-align: center;
+	padding: 20px 0;
+}
+/*propi. de imagen*/
+.left .img_holder img{
+	width: 200px;
+	border-radius: 25px;
+}
+/*espacios de la pag. izquierda*/
+.pb{
+	padding-bottom: 20px;
+}
+/*propi. de textos grandes*/
+.title{
+	font-size: 23px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	padding-bottom: 10px;
+	color: #3928be;
+	position: relative;
+	text-align: right;
+	margin-bottom: 15px;
+}
+/*propi. de linea debajo de texto g.*/
+.title:before{
+	content: "";
+	position: absolute;
+	top: 32px;
+	right: 0;
+	width: 50px;
+	height: 3px;
+	background: #3525af;
+}
+/*color de iconos contacto -habilidades*/
+.left .icon{
+	font-size: 20px;
+	color: #9153c9;
+}
+/*color de texto de habilidades*/
+.left .text{
+	color: #9153c9;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+/*propi. de texto de contacto*/
+.contact .li_wrap{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 12px;
+}
+/*propi. de iconos de contacto*/
+.contact .li_wrap .icon{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 15px;
+}
+/*propi. de texto de contacto*/
+.contact .li_wrap .text{
+	width: calc(100% - 50px);
+	word-break: break-word;
+	color: #fff;
+}
+/*propi. iconos de habilidades*/
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*cropieades de habilidades*/
+.skills .li_wrap,
+.hobbies .li_wrap{
+	width: 100px;   
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/*color de fondo de habilidades*/
+.skills .li_wrap{
+	background: #fff;
+}
+/*tamaño iconos de habilidades*/
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+	margin-top: 5px;
+}
+/*color de las orillas de iconos De hubbies*/
+.hobbies .li_wrap{
+	border: 2px solid #fff;
+}
+/*color de los iconos de hubbies*/
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: #fff;
+}
+/*color de fondo de hubbies*/
+.hobbies .li_wrap:hover{
+	background: #fff;
+}
+/*color de cambio en iconos hobbies*/
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: #9153c9;
+}
+/*propiedades de acerca de mi*/
+.header{
+	background: #292b2f;
+	padding: 15px 30px;
+	color: #fff;
+	height: 240px;
+}
+/*propi. de nombres*/
+.header .name{
+	font-size: 45px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #3525af;
+}
+/*propi. de apellidos*/
+.header .role{
+	font-weight: 300;
+	font-size: 27px;
+}
+
+.header .about{
+	margin-top: 20px;
+	line-height: 26px;
+}
+/*margen. experiencia - educacion*/
+.right_inner{
+	padding: 20px;
+	color: #292b2f;
+}
+/*espacio de educacion*/
+.right_inner .education{
+	margin-top: 30px;
+}
+/*espacios ente parrafps*/
+.right_inner .li_wrap{
+	display: flex;
+	margin-bottom: 15px;
+}
+/*color de fechas(años)*/
+.right_inner .li_wrap .date {
+    width: 125px;
+    color: #9153c9;
+}
+/*propi. pagi izquierda blanca*/
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+}
+/*propi. de titulos*/
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #9153c9;
+}
+/*tamañno de subtitulos*/
+.right_inner .li_wrap .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+/*margen de parragos*/
+.right_inner .li_wrap .info_cont{
+	margin-top: 20px;
+}
+/*propi. de puntos de diseños*/
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #9153c9;
+	border-radius: 50%;
+}
+/*propi. de puntos de lineas*/
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background: #9153c9;
+}
